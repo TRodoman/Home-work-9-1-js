@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home work 9-1 js</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+
+  <body>
+    
+    <ol>
+      <li>
+        Створіть програму секундомір.
+        <br />
+        * Секундомір матиме 3 кнопки "Старт, Стоп, Скидання"<br />
+        * При натисканні на кнопку стоп фон секундоміра має бути червоним, старт
+        - зелений, скидання - сірий * Виведення лічильників у форматі
+        ЧЧ:ММ:СС<br />
+        * Реалізуйте Завдання використовуючи синтаксис ES6 та стрілочні функції
+      </li>
+      <li>
+        Реалізуйте програму перевірки телефону<br />
+        * Використовуючи JS Створіть поле для введення телефону та кнопку
+        збереження<br />
+        * Користувач повинен ввести номер телефону у форматі 000-000-00-00
+        <br />
+        
+        * Після того як користувач натискає кнопку зберегти перевірте
+        правильність введення номера, якщо номер правильний зробіть зелене тло і
+        використовуючи document.location переведіть користувача на сторінку
+        https://risovach.ru/upload/2013/03/mem/toni-stark_13447470_big_.jpeg
+        якщо буде помилка, відобразіть її в діві до input.
+      </li>
+    </ol>
+    
+    <div class="container-stopwatch black">
+      <div class="stopwatch-display">
+        <span id="minute">00</span>:<span id="second">00</span>:<span id="ms"
+        >00</span
+        >
+      </div>
+      
+      <div class="stopwatch-control">
+        <button id="startButton" onclick="start()">Start</button>
+        <button id="stopButton" onclick="stop()">Stop</button>
+        <button id="resetButton" onclick="reset()">Reset</button>
+      </div>
+    </div>
+    <hr />
+    
+    <div>
+      <p>Задача 2</p>
+    
+      <form>
+    
+        <label class="text-mess">Введите номер телефона</label><br>
+        <input class="input" type="text" id="phone" name="phone" placeholder="+38 000-000-00-00" maxlength="17"/>
+        <div class="span"></div>
+    
+        <button class="btn" type="submit">Отправить</button>
+        
+      </form>
+    </div>
+    
+    <script src="./code/script.js"></script>
+  </body>
+  </html>
+  
